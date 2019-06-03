@@ -63,10 +63,21 @@ container_image(
         packages["curl"],
         packages["git"],
         packages["coreutils"],
-        packages["python"],
-        packages["gzip"]
+        packages["gzip"],
+        packages["libncursesw5"],
+        packages["libreadline7"],
+        packages["libsqlite3-0"],
+        packages["libssl1.1"],
+        packages["mime-support"],
+        packages["readline-common"],
+        packages["python2.7-minimal"],
+        packages["libpython2.7-minimal"],
+        packages["libpython2.7-stdlib"],
     ],
     entrypoint = ["/nodejs/bin/node"],
+    symlinks = {
+        "/usr/bin/python": "/usr/bin/python2.7"
+    },
     tars = ["@nodejs//:tar"],
     env = {"PATH": "$PATH:/nodejs/bin/"},
     repository = "drydock/distrobase"
