@@ -102,8 +102,16 @@ dpkg_list(
         "curl",
         "git",
         "coreutils",
-        "python",
-        "gzip"
+        "gzip",
+        "libncursesw5",
+        "libreadline7",
+        "libsqlite3-0",
+        "libssl1.1",
+        "mime-support",
+        "readline-common",
+        "python2.7-minimal",
+        "libpython2.7-minimal",
+        "libpython2.7-stdlib",
     ],
     sources = [
         "@debian_stretch_security//file:Packages.json",
