@@ -73,6 +73,7 @@ container_image(
         packages["python2.7-minimal"],
         packages["libpython2.7-minimal"],
         packages["libpython2.7-stdlib"],
+        packages["hostname"]
     ],
     entrypoint = ["/nodejs/bin/node"],
     symlinks = {

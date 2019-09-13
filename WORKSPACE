@@ -112,6 +112,7 @@ dpkg_list(
         "python2.7-minimal",
         "libpython2.7-minimal",
         "libpython2.7-stdlib",
+        "hostname"
     ],
     sources = [
         "@debian_stretch_security//file:Packages.json",
