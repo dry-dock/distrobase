@@ -148,8 +148,8 @@ container_pull(
 http_archive(
     name = "nodejs",
     build_file = "//:BUILD.nodejs",
-    sha256 = "b391450e0fead11f61f119ed26c713180cfe64b363cd945bac229130dfab64fa",
-    strip_prefix = "node-v8.16.0-linux-x64/",
+    sha256 = "2f0397bb81c1d0c9901b9aff82a933257bf60f3992227b86107111a75b9030d9",
+    strip_prefix = "node-v10.16.3-linux-x64/",
     type = "tar.gz",
-    urls = ["https://nodejs.org/dist/v8.16.0/node-v8.16.0-linux-x64.tar.gz"],
+    urls = ["https://nodejs.org/dist/v10.16.3/node-v10.16.3-linux-x64.tar.gz"],
 )
